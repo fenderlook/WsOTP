@@ -1,6 +1,8 @@
 package co.com.claro.otpParameters.model;
 
+import co.com.claro.otpParameters.entity.ParameterOtp;
 import co.com.claro.otpParameters.entity.PqrParameters;
+import java.util.List;
 import lombok.*;
 
 @NoArgsConstructor
@@ -8,9 +10,12 @@ import lombok.*;
 @ToString
 public class ParameterResponse {
 
-    @Getter @Setter
-    private PqrParameters parameter;
+    @Getter
+    @Setter
+    private List<ParameterOtp> parameters;
 
-    @Getter @Setter
-    private  GenericResponse response;
+    @Getter
+    @Setter
+    private GenericResponse response;
+
 }
